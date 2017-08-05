@@ -1,0 +1,8 @@
+<div id="quote-slider">
+  {% for quote in site.data.quotes %}
+    <div class="slide">
+      <blockquote>{{ quote.content }}</blockquote>
+      <cite>{{ quote.citation}}</cite>
+    </div>
+  {% endfor %}
+</div>

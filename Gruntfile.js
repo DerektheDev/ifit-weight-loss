@@ -306,7 +306,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['<%= site.source %>/js/**/*.{js,coffee}'],
-        tasks: ['jekyll:server', 'bsReload:all', 'jshint:all']
+        tasks: ['jekyll:server', 'bsReload:all'/*, 'jshint:all'*/]
       },
       jekyll: {
         files: [
@@ -359,13 +359,13 @@ module.exports = function(grunt) {
     'clean:server',
     'jekyll:check',
     'sass:server',
-    'jshint:all',
+    // 'jshint:all',
     'csslint:check',
     'scsslint'
   ]);
 
   grunt.registerTask('build', [
-    'jshint:all',
+    // 'jshint:all',
     'clean',
     'jekyll:dist',
     'concurrent:dist',

@@ -1,3 +1,31 @@
-<footer>
-  
+<footer id="global-footer">
+  <nav id="global-footer__links">
+    <ul>
+      {% for link in site.data.footer_links %}
+        <li>
+          <a href="#">{{ link }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <nav id="global-footer__social">
+    <ul>
+      {% for channel in site.data.social_links %}
+        <li>
+          <a href="#">
+            <i class="fa fa-{{ channel }}"></i>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <section class="global-footer__copyright">
+    <p>
+      Copyright &copy; iFit.com. All rights reserved.
+      <a href="#" class="language-selector">
+        Language: English
+        <i class="fa fa-caret-down"></i>
+      </a>
+    </p>
+  </section>
 </footer>

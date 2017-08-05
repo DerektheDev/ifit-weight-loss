@@ -5,6 +5,7 @@
     "normalize-css": "~4.2.0",
     "jquery": "~3.1.0",
     "modernizr": "~3.3.1",
-    "fontawesome": "~4.6.3"
+    "fontawesome": "~4.6.3",
+    "slick-carousel": "^1.7.1"
   }
 }
