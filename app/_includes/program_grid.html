@@ -1,0 +1,15 @@
+<h1 class="text-center">Weight Loss</h1>
+<p class="text-center">Welcome to the center of it all</p>
+<nav class="grid">
+  <ul>
+    {% for program in site.data.programs %}
+      <li>
+        <a href="#"><img src="img/resized/{{ program.image }}"></a>
+        <p class="title">
+          <a href="#">{{ program.title }}</a>
+        </p>
+        <p class="desc">{{ program.desc }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
