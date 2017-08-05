@@ -298,7 +298,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['<%= site.source %>/_scss/**/*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer:dist', 'bsReload:css', 'scsslint']
+        tasks: ['sass:server', 'autoprefixer:dist', 'bsReload:css'/*, 'scsslint'*/]
       },
       autoprefixer: {
         files: ['<%= site.source %>/css/**/*.css'],
@@ -360,8 +360,8 @@ module.exports = function(grunt) {
     'jekyll:check',
     'sass:server',
     // 'jshint:all',
-    'csslint:check',
-    'scsslint'
+    'csslint:check'//,
+    // 'scsslint'
   ]);
 
   grunt.registerTask('build', [

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17.5px;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.page-header,
+.page-footer {
+  text-align: center;
+  p {
+    font-size: 1rem;
+  }
+}
+
+.page-header {
+  margin: 2rem 0 1rem;
+}
+
+.page-footer {
+  margin: 2rem 0;
+  .btn {
+    margin-left: 1rem;
+  }
+}

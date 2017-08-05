@@ -1,24 +1,13 @@
 @import 'atoms/variables';
 @import 'atoms/colors';
 @import 'atoms/mixins';
+@import 'atoms/typography';
 
+@import 'molecules/heros';
+
+@import 'organisms/program-grids';
+@import 'organisms/sliders';
+
+@import 'templates/body';
+@import 'templates/header';
 @import 'templates/footer';
-
-body {
-  background-color: $background-grey;
-  color: $copy-dark;
-  margin: 50px auto;
-
-  @media screen and (max-width: $sm-min - 1) {
-    padding: 0 10px;
-  }
-
-  @media screen and (min-width: $sm-min) {
-    padding: 0;
-    width: $sm-min;
-  }
-
-  @media screen and (min-width: $lg-min) {
-    width: $md-min;
-  }
-}

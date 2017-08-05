@@ -1,0 +1,31 @@
+#quote-slider {
+  background: $brand-black;
+}
+
+.slick-slider {
+  padding: 2rem 0 .5rem;
+  blockquote {
+    color: $brand-white;
+    line-height: 1rem;
+    line-height: 1.5rem;
+  }
+  cite {
+    color: $brand-blue;
+    float: right;
+    font-style: italic;
+  }
+  .slick-dots {
+    bottom: auto;
+    margin: 0;
+    position: relative;
+    li {
+      margin: 0;
+      button {
+        opacity: 1;
+        &:before {
+          color: $brand-blue;
+        }
+      }
+    }
+  }
+}

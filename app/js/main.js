@@ -1,10 +1,12 @@
 $( document ).ready(function() {
 
-  $('#quote-slider').slick({
+  $('#quote-slider .container').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true
+    dots: true,
+    autoplay: true,
+    arrows: false
   });
 
 });

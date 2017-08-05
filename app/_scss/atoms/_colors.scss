@@ -1,63 +1,16 @@
-$test: #ff7d7d;
-$salmon: #fa8072;
+// brand colors
+$brand-black: #1e1e1e;
+$brand-black--rich: #151515;
+$brand-white: #fff;
+$brand-blue: #0096d6;
 
-$blue: #0079c2;
-$blue-dark: #005995;
-$blue-light: #e0edf2;
+// copy
+$copy-color: #424242;
+$copy-color--light: #929292;
+$copy-color--reverse: $brand-white;
+$copy-color--footer: #666;
+$header-color: $copy-color;
+$header-color--reverse: $copy-color--reverse;
 
-$red: #ff0f0f;
-$red-dark: #7a0101;
-$red-light: #f65656;
-$red-medium: #c10808;
-
-$grey-light:  #fafafa;
-$grey-medium: #b4b4b4;
-$grey-dark:   #67696f;
-
-$placeholder: #bfc7cc;
-
-$white: #fff;
-$white-trans: rgba(255, 255, 255, 0.6);
-$black: #000;
-$black-trans: rgba(0, 0, 0, 0.6);
-
-$copy-light: #999e9c;
-$copy-dark:  #53555c;
-
-$background-white: $white;
-$background-grey: $grey-light;
-$background-tan: #f8eed7;
-
-$fold-shadow: #00314e;
-
-$form-background: $background-tan;
-$input-outline-shadow: rgba(110, 172, 235, 1);
-$input-inset-shadow: rgba(194, 194, 194, 1);
-
-$inactive:     $grey-dark;
-
-$link-idle:  $blue;
-$link-hover: $blue;
-
-$action-idle:  $blue;
-$action-hover: $link-hover;
-
-$blue-rule: rgba(160, 196, 230, 1);
-
-$menu-background: #e8f0f7;
-
-$tooltip-copy: $copy-dark;
-$tooltip-background: #fefcee;
-
-$border-default: $grey-medium;
-$border-light:   $grey-light;
-$border-nav: #c7d9ea;
-
-$error-border: #f00;
-$error-background: #f6f6f6;
-$error-copy: #f00;
-
-$table-header: #c7e0f6;
-$table-header-tab: #e7eef6;
-$table-row-odd: #eef6fc;
-$table-row-even: #fff;
+// other
+$divider-color: #ccc;

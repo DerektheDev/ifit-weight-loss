@@ -1,16 +1,54 @@
-footer {
-  color: $copy-light;
-  font-size: 0.85em;
-  margin: 20px 0 0;
+footer#global-footer {
+  background: $brand-black--rich;
+  font-size: .7rem;
+  float: left;
+  padding: 1rem;
   width: 100%;
 
-  @media screen and (min-width: $sm-min) {
-    text-align: center;
+  &, a {
+    color: $copy-color--footer;
   }
 
-  @media screen and (min-width: $lg-min) {
-    margin-top: 75px;
-    text-align: left;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    li {
+      display: inline-block;
+    }
   }
 
+  nav#global-footer__links,
+  nav#global-footer__social,
+  .global-footer__copyright {
+    display: inline-block;
+  }
+
+  nav#global-footer__links {
+    text-transform: uppercase;
+    ul {
+      margin-right: 1rem;
+      li {
+        &:not(:last-of-type):after {
+          content: "/";
+        }
+        a {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  nav#global-footer__social {
+    ul {
+      li {
+        padding: 0 .5rem;
+      }
+    }
+  }
+  .global-footer__copyright {
+    float: right;
+    a {
+      text-transform: uppercase;
+    }
+  }
 }
