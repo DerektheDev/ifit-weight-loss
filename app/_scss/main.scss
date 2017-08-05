@@ -2,8 +2,7 @@
 @import 'atoms/colors';
 @import 'atoms/mixins';
 
-@import 'sections/footer';
-@import 'sections/menu';
+@import 'templates/footer';
 
 body {
   background-color: $background-grey;
