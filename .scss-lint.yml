@@ -1,0 +1,37 @@
+---
+scss_files: 'app/_scss/**/*.scss'
+
+exclude:
+  - 'app/_scss/_bootstrap-overrides.scss'
+
+linters:
+  Comment:
+    enabled: false
+
+  LeadingZero:
+    style: 'include_zero'
+
+  NestingDepth:
+    max_depth: 5
+
+  PseudoElement:
+    enabled: false # we still need to support IE8, stick with one colon.
+
+  SelectorDepth:
+    max_depth: 5
+
+  SelectorFormat:
+    enabled: false
+
+  StringQuotes:
+    enabled: false
+
+  QualifyingElement:
+    allow_element_with_attribute: true
+
+  VendorPrefix:
+    excluded_identifiers:
+      - 'scale'
+      - 'box-shadow'
+      - 'columns'
+      - 'column-span'
