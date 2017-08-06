@@ -63,3 +63,12 @@
     }
   }
 }
+
+// iPad Fix
+@media (min-device-width: $md-min) and (max-device-width: 1024px) {
+  .hero {
+    &.hero--weight-loss {
+      background-size: auto;
+    }
+  }
+}
