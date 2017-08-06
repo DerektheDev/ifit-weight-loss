@@ -56,5 +56,11 @@
 @media (max-width: $sm-max) {
   .hero {
     padding: 2rem 0;
+    &.hero--weight-loss {
+      background: url('../img/resized/hero--stretch.jpg');
+    }
+    h2, p {
+      text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    }
   }
 }
