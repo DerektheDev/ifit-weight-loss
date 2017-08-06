@@ -9,4 +9,8 @@ $( document ).ready(function() {
     dots: true
   });
 
+  $('nav.grid li').hover(function(){
+    $(this).toggleClass('hovered');
+  });
+
 });

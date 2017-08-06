@@ -10,10 +10,23 @@ nav.grid {
     li {
       width: 21%;
       margin-right: 5%;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      transition:all 1s;
+
+      &.hovered {
+        box-shadow: 1rem 1rem 1rem #eee;
+        transform: rotate(2deg);
+        width: 22%;
+        transition: all 500ms;
+      }
 
       &:nth-child(4n) {
         margin-right: 0;
+      }
+      &:not(:nth-child(4n)) {
+        &.hovered {
+          margin-right: 4%;
+        }
       }
 
       img {
@@ -32,6 +45,7 @@ nav.grid {
         font-size: .6rem;
         @include font-georgia;
         color: $copy-color--light;
+        margin-bottom: .5rem;
       }
     }
   }

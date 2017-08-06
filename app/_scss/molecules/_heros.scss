@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-left: -100%;
+    }
+    to   {
+      opacity: 1;
+      margin-left: 0;
+    }
+}
+
 .hero {
   padding: 12rem 0 8rem;
 
@@ -12,23 +23,25 @@
     background-size: cover;
     margin-top: -16rem;
     header {
-      margin-top: 18rem;
+
     }
   }
-  header, p {
+  h2, p {
     color: white;
-  }
-  p {
     margin: 0;
-    max-width: 40%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
   }
-  header {
+  h2 {
+    margin: 18rem 0 2rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
     font-size: 2.8rem;
     font-weight: lighter;
-    p {
-      max-width: 100%;
-    }
+    max-width: 100%;
+  }
+  p {
+    opacity: 0;
+    max-width: 40%;
+    animation-delay: 1s;
   }
 }
