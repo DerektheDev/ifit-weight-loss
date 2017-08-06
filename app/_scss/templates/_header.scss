@@ -75,3 +75,31 @@
     }
   }
 }
+
+@media (max-width: $sm-max) {
+  #global-header {
+    #global-header__secondary {
+      text-align: center;
+
+      .page-title,
+      nav.sub-navigation {
+        display: block;
+      }
+      nav.sub-navigation {
+        float: none;
+        font-size: 1rem;
+        ul {
+          margin-top: 1rem;
+          display: block;
+          li {
+            padding: .5rem 0 0;
+            display: block;
+            .fa-search {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

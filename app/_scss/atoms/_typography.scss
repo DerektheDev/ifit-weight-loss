@@ -34,3 +34,11 @@ a {
     display: inline-block;
   }
 }
+
+@media (max-width: $xs-max) {
+  a {
+    &.btn {
+      display: block;
+    }
+  }
+}

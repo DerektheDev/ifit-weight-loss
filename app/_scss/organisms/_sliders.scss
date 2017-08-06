@@ -54,3 +54,11 @@
     }
   }
 }
+
+@media (max-width: $sm-max) {
+  .slick-slider {
+    .slick-dots {
+      bottom: 1rem;
+    }    
+  }
+}

@@ -7,8 +7,20 @@ html {
 }
 
 .container {
-  width: 960px;
   margin: 0 auto;
+  @media (max-width: $sm-max) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  @media (min-width: $md-min) and (max-width: $md-max) {
+    width: 750px;
+  }
+  @media (min-width: $lg-min) and (max-width: $lg-max) {
+    width: 970px;
+  }
+  @media (min-width: $xl-min) {
+    width: 1170px;
+  }
 }
 
 .page-header,
@@ -39,5 +51,14 @@ html {
   }
   .btn {
     margin-left: 1rem;
+  }
+}
+
+@media (max-width: $sm-max) {
+  .join-footer {
+    padding: 0 1rem;
+    .btn {
+      margin: 1rem 0;
+    }
   }
 }
