@@ -18,13 +18,14 @@ nav.grid {
 
       img {
         width: 100%;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
       }
 
       .title, .desc {
         margin: .25rem 0 0;
       }
       .title {
-        font-size: .65rem;
+        font-size: .8rem;
         font-weight: bold;
       }
       .desc {

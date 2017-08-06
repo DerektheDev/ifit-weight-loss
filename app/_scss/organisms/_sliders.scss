@@ -8,22 +8,45 @@
     color: $brand-white;
     line-height: 1rem;
     line-height: 1.5rem;
+    padding-left: 6rem;
+    margin: 1rem 0 0 0;
+    &:before {
+      content: '\2018\2018';
+      letter-spacing: -1rem;
+      color: $brand-blue;
+      position: absolute;
+      font-size: 13rem;
+      margin: 4rem 0 0 -7rem;
+      font-family: 'Times New Roman', serif;
+    }
   }
   cite {
     color: $brand-blue;
     float: right;
     font-style: italic;
+    margin: 2rem 1rem 3rem 0;
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
   }
   .slick-dots {
     bottom: auto;
-    margin: 0;
+    margin: 0 0 .5rem;
     position: relative;
     li {
       margin: 0;
       button {
-        opacity: 1;
         &:before {
           color: $brand-blue;
+          opacity: 1;
+          font-size: 1rem;
+          content: "●";
+        }
+      }
+      &:not(.slick-active) {
+        button {
+          &:before {
+            opacity: 1;
+            content: "○";
+          }
         }
       }
     }

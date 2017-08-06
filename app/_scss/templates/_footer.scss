@@ -1,6 +1,6 @@
 footer#global-footer {
   background: $brand-black--rich;
-  font-size: .7rem;
+  font-size: .6rem;
   float: left;
   padding: 1rem;
   width: 100%;
@@ -27,7 +27,7 @@ footer#global-footer {
   nav#global-footer__links {
     text-transform: uppercase;
     ul {
-      margin-right: 1rem;
+      margin-right: .75rem;
       li {
         &:not(:last-of-type):after {
           content: "/";
@@ -47,8 +47,14 @@ footer#global-footer {
   }
   .global-footer__copyright {
     float: right;
-    a {
-      text-transform: uppercase;
+    p {
+      color: $copy-color--footer;
+      margin: 0;
+      a {
+        margin-left: .5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
     }
   }
 }
