@@ -2,6 +2,9 @@
   background: $brand-black;
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 .slick-slider {
   padding: 2rem 0 .5rem;
   blockquote {
@@ -17,15 +20,14 @@
       position: absolute;
       font-size: 13rem;
       margin: 4rem 0 0 -7rem;
-      font-family: 'Times New Roman', serif;
+      @include font-times;
     }
   }
   cite {
     color: $brand-blue;
     float: right;
-    font-style: italic;
     margin: 2rem 1rem 3rem 0;
-    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+    @include font-georgia;
   }
   .slick-dots {
     bottom: auto;

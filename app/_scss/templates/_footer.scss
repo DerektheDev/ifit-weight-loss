@@ -9,6 +9,12 @@ footer#global-footer {
     color: $copy-color--footer;
   }
 
+  a {
+    &:hover {
+      color: lighten($copy-color--footer, 10%)
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;

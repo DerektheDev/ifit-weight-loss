@@ -1,10 +1,21 @@
+@mixin font-roboto {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+@mixin font-georgia {
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  font-style: italic;
+};
+@mixin font-times {
+  font-family: 'Times New Roman', 'Times', serif;
+}
+
 h1, h2, h3,
 h4, h5, h6,
 ul, ol, li,
 blockquote, cite, q,
 p, a, table,
 input, select, label {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  @include font-roboto;
   color: $copy-color;
 }
 
